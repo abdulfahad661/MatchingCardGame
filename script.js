@@ -22,14 +22,29 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: 'card5', img: 'images/shy.png' },
         // ...add more pairs as needed
     ];
-    function startTimer() {
-      const twoHoursInMilliseconds = 2 * 60 * 60 * 1000; // Convert 2 hours to milliseconds
-      setTimeout(function() {
-        // Code to execute after 2 hours
-        console.log("2 hours have passed!");
-      }, twoHoursInMilliseconds);
-    }
-    startTimer();
+    function startCountdown() {
+        const twoHoursInMilliseconds = 2 * 60 * 60 * 1000;
+        let remainingTime = twoHoursInMilliseconds;
+        
+        const timerId = setInterval(function() {
+            remainingTime -= 1000; // Decrement remaining time every second
+        
+            const hours = Math.floor(remainingTime / (1000 * 60 * 60));
+            const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+        
+            // Update the timer display element
+            document.getElementById("timer").innerHTML = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        
+            if (remainingTime <= 0) {
+              clearInterval(timerId);
+              console.log("Time's up!");
+            }
+          }, 1000); // Update timer every second
+        }
+        
+    startCountdown();
+
     
     function shuffle(array) {
         array.sort(() => 0.5 - Math.random());
