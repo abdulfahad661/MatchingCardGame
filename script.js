@@ -22,6 +22,14 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: 'card5', img: 'images/shy.png' },
         // ...add more pairs as needed
     ];
+    function startTimer() {
+      const twoHoursInMilliseconds = 2 * 60 * 60 * 1000; // Convert 2 hours to milliseconds
+      setTimeout(function() {
+        // Code to execute after 2 hours
+        console.log("2 hours have passed!");
+      }, twoHoursInMilliseconds);
+    }
+    startTimer();
     
     function shuffle(array) {
         array.sort(() => 0.5 - Math.random());
