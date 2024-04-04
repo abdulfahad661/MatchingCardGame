@@ -18,7 +18,7 @@ Add additional cards ✓
 
 Multi-player capabilities so you can compare scores
 
-Resizing images
+Resizing images ✓
 
 # The Deployment Pipeline
 The pipeline is created using AWS Code Pipeline. The pipeline pulls the code from GitHub, and deploys it to S3, when a change is detected the pipeline updates and pushes code immediately 
