@@ -22,8 +22,6 @@ Resizing images ✓
 # The Deployment Pipeline
 The pipeline is created using AWS Code Pipeline. The pipeline pulls the code from GitHub, and deploys it to S3, when a change is detected the pipeline updates and pushes code immediately 
 
-![AWS Diagram](https://github.com/OklenCodes/MatchingCardGame/assets/26550391/205370a5-a749-4aa2-98f2-4c5b4180edcd)
-
 # Cost
 All services used are eligible for the AWS Free Tier. However, charges will incur at some point so it's recommended that you shut down resources after completing this tutorial.
 
