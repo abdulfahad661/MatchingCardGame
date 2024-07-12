@@ -1,5 +1,6 @@
 # MatchingCardGame
-This repo relates to the code files used in this YouTube video - https://www.youtube.com/watch?v=1lrNdvmWtgA
+This repo relates to the code files used in this YouTube video - https://www.youtube.com/watch?v=1lrNdvmWtgA |
+
 Code for a game is hosted in GitHub. We create an S3 bucket for static website hosting, then create a continuous deployment pipeline (using AWS Code Pipeline) to automatically deploy the code whenever changes are made.
 
 # The Game
