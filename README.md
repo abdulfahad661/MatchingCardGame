@@ -1,5 +1,5 @@
 # MatchingCardGame
-This repo relates to the code files used in this YouTube video.
+This repo relates to the code files used in this YouTube video - https://youtu.be/dutxZ1a1cmo
 Code for a game is hosted in GitHub. We create an S3 bucket for static website hosting, then create a continuous deployment pipeline (using AWS Code Pipeline) to automatically deploy the code whenever changes are made.
 
 # The Game
@@ -24,6 +24,8 @@ The pipeline is created using AWS Code Pipeline. The pipeline pulls the code fro
 
 # Cost
 All services used are eligible for the AWS Free Tier. However, charges will incur at some point so it's recommended that you shut down resources after completing this tutorial.
+
+
 
 
 
